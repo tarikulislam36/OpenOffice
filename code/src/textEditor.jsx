@@ -1,17 +1,16 @@
-import React from 'react'
-import Quill from 'quill'
-import 'quill/dist/quill.snow.css'
+import {useEffect} from 'react';
+import Quill from 'quill';
+import 'quill/dist/quill.snow.css';
 
-export default function textEditor() {
-  return (
-    <div>textEditor
-
-    <div></div>
-      <div id="editor">
-
-
-        
-      </div>
-    </div>
-  )
+function TextEditor() {
+    useEffect(() => { 
+        new Quill('#editor', {  theme: 'snow' });
+    }, []);
+    return (
+        <div id='editor'>
+           Write Here!
+        </div>
+    );
 }
+
+export default TextEditor;

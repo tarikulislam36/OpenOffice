@@ -1,10 +1,11 @@
-import textEditor from "./textEditor";
+import TextEditor from "./textEditor";
 
 function App() {  
   return (
     <div>
-      <h1>App</h1>
-      <textEditor />
+     
+     
+      <TextEditor />
     </div>
   );
 }
