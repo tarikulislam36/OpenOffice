@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
+import textEditor from "./textEditor";
 
-const App = () => {
-  const [content, setContent] = useState('');
-
-  const handleChange = (e) => {
-    setContent(e.target.value);
-  };
-
+function App() {  
   return (
     <div>
-      <textarea value={content} onChange={handleChange} />
-      <div>{content}</div>
+      <h1>App</h1>
+      <textEditor />
     </div>
   );
-};
+}
 
 export default App;
